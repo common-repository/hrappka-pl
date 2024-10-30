@@ -1,0 +1,259 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: hrappka-offer-list\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-12 08:26+0200\n"
+"PO-Revision-Date: 2019-08-21 13:01+0000\n"
+"Last-Translator: \n"
+"Language-Team: Polish\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10 >= 2 && n%10<=4 "
+"&&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Loco-Source-Locale: pl_PL\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: _;__;_e;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+"\n"
+"X-Loco-Parser: loco_parse_mo"
+
+msgid "Aplikuj"
+msgstr "Aplikuj"
+
+msgid "Brak ofert"
+msgstr "Brak ofert"
+
+msgid "Brak ustawień dla widget-u"
+msgstr "Brak ustawień dla widget-u"
+
+msgid "CONTRACT"
+msgstr "Kontrakt"
+
+msgid "Czas pracy"
+msgstr "Czas pracy"
+
+msgid "Data publikacji"
+msgstr "Data publikacji"
+
+msgid "Data zakończenia rekrutacji"
+msgstr "Data zakończenia rekrutacji"
+
+msgid "Do"
+msgstr "Do"
+
+msgid "Dodano"
+msgstr "Dodano"
+
+msgid "EMPLOYMENT_CONTRACT"
+msgstr "Kontrakt"
+
+msgid "EMPLOYMENT_CONTRACT_TEMPORARY"
+msgstr "O pracę tymczasową"
+
+msgid "FRAMEWORK"
+msgstr "Ramowa"
+
+msgid "Godziny pracy"
+msgstr "Godziny pracy"
+
+msgid "HRappka Lista Ofert"
+msgstr "HRappka Lista Ofert"
+
+msgid "HRappka.pl"
+msgstr "HRappka.pl"
+
+msgid "Hash"
+msgstr "Hash"
+
+msgid "Hash firmy"
+msgstr "Hash firmy"
+
+msgid ""
+"Hash firmy można znaleść w Rekrutacja >  Integracja ze stroną www > sekcja "
+"API "
+msgstr ""
+"Hash firmy można znaleźć w Rekrutacja >  Integracja ze stroną www > sekcja "
+"API "
+
+msgid "INTERNSHIP"
+msgstr "Praktyki"
+
+msgid "Ilość"
+msgstr "Ilość"
+
+msgid "Ilość miejsc"
+msgstr "Ilość miejsc"
+
+msgid "Klient"
+msgstr "Klient"
+
+msgid "Końcówka adresu URL do strony ofert"
+msgstr "Końcówka adresu URL do strony ofert"
+
+msgid ""
+"Końcówka adresu URL do strony ofert, na której będą sie wyświetlać szczegóły "
+"ofert. Należy w ustawieniach strony w sekcji 'Atrybuty strony'  wybrać "
+"szablon 'HRappka.pl' "
+msgstr ""
+"Końcówka adresu URL do strony ofert, na której będą wyświetlane szczegóły "
+"ofert. Należy w ustawieniach strony w sekcji 'Atrybuty strony'  wybrać "
+"szablon 'HRappka.pl' "
+
+msgid "Lista widgetów"
+msgstr "Lista widgetów"
+
+msgid "Lokalizacja"
+msgstr "Lokalizacja"
+
+msgid "Nazwa"
+msgstr "Nazwa"
+
+msgid "Nie podano hash-u firmy"
+msgstr "Nie podano hash-u firmy"
+
+msgid "Nie podano hash-u plugina"
+msgstr "Nie podano hash-u plugina"
+
+msgid "Nie znaleziono oferty"
+msgstr "Nie znaleziono oferty"
+
+msgid "ORDER_CONTRACT"
+msgstr "Umowa zlecenie"
+
+msgid "OTHER_CONTRACT"
+msgstr "Inna"
+
+msgid "Od"
+msgstr "Od"
+
+msgid "Oferta"
+msgstr "Oferta"
+
+msgid "Oferujemy"
+msgstr "Oferujemy"
+
+msgid "Ogólne"
+msgstr "Ogólne"
+
+msgid "Opis stanowiska"
+msgstr "Opis stanowiska"
+
+msgid "PERMANENT"
+msgstr "Stała"
+
+msgid "Pokaż więcej"
+msgstr "Pokaż więcej"
+
+msgid "SEASONAL_CONTRACT"
+msgstr "O pracę sezonową"
+
+msgid "Serwer"
+msgstr "Serwer"
+
+msgid "Strona Ofert"
+msgstr "Strona Ofert"
+
+msgid "TASK_CONTRACT"
+msgstr "Umowa o dzieło"
+
+msgid "TEMPORARY"
+msgstr "Tymczasowa"
+
+msgid "Termin zatrudnienia do"
+msgstr "Termin zatrudnienia do"
+
+msgid "Termin zatrudnienia od"
+msgstr "Termin zatrudnienia od"
+
+msgid "Typ"
+msgstr "Typ"
+
+msgid "Typ umowy"
+msgstr "Typ umowy"
+
+msgid "Ukryj  klienta"
+msgstr "Ukryj  klienta"
+
+msgid "Ukryj date publikacji"
+msgstr "Ukryj date publikacji"
+
+msgid "Ukryj date zakończenia rekrutacji"
+msgstr "Ukryj date zakończenia rekrutacji"
+
+msgid "Ukryj godziny pracy"
+msgstr "Ukryj godziny pracy"
+
+msgid "Ukryj ilość stanowisk"
+msgstr "Ukryj ilość stanowisk"
+
+msgid "Ukryj logo"
+msgstr "Ukryj logo"
+
+msgid "Ukryj oferujemy"
+msgstr "Ukryj oferujemy"
+
+msgid "Ukryj opis stanowiska"
+msgstr "Ukryj opis stanowiska"
+
+msgid "Ukryj termin zatrudnienia do"
+msgstr "Ukryj termin zatrudnienia do"
+
+msgid "Ukryj termin zatrudnienia od"
+msgstr "Ukryj termin zatrudnienia od"
+
+msgid "Ukryj typ umowy"
+msgstr "Ukryj typ umowy"
+
+msgid "Ukryj wymagania stanowiska"
+msgstr "Ukryj wymagania stanowiska"
+
+msgid "Ukryj wynagrodzenie brutto"
+msgstr "Ukryj wynagrodzenie brutto"
+
+msgid "Ważne do"
+msgstr "Ważne do"
+
+msgid "Widoczne elementy na stronie"
+msgstr "Widoczne elementy na stronie"
+
+msgid "Wybierz ustawienia widget-u"
+msgstr "Wybierz ustawienia widget-u"
+
+msgid "Wymagania"
+msgstr "Wymagania"
+
+msgid "Wynagrodzenie"
+msgstr "Wynagrodzenie"
+
+msgid "Wynagrodzenie brutto"
+msgstr "Wynagrodzenie brutto"
+
+msgid "Wyszukaj"
+msgstr "Wyszukaj"
+
+msgid "Własny css"
+msgstr "Własny css"
+
+msgid "Zaktualizuj oferty i ustawienia widgetów"
+msgstr "Zaktualizuj oferty i ustawienia widgetów"
+
+msgid "Zapisz ustawienia"
+msgstr "Zapisz ustawienia"
+
+msgid "nasze-oferty"
+msgstr "nasze-oferty"
+
+msgid "np."
+msgstr "np."
+
+msgid ""
+"HRappka.pl umożliwia automatyczne tworzenie listy ofert pracy oraz podstron "
+"ze szczegółami oferty i linkiem aplikacyjnym. Do poprawnego działania "
+"wtyczki wymagane jest posiadanie konta w systemie HRappka.pl."
+msgstr ""
+"HRappka.pl umożliwia automatyczne tworzenie listy ofert pracy oraz podstron "
+"ze szczegółami oferty i linkiem aplikacyjnym. Do poprawnego działania "
+"wtyczki wymagane jest posiadanie konta w systemie HRappka.pl."

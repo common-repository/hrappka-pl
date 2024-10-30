@@ -1,0 +1,253 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: hrappka-offer-list\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-12 08:28+0200\n"
+"PO-Revision-Date: 2019-08-21 12:53+0000\n"
+"Last-Translator: \n"
+"Language-Team: German\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Loco-Source-Locale: pl_PL\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: _;__;_e;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+"\n"
+"X-Loco-Parser: loco_parse_mo"
+
+msgid "Aplikuj"
+msgstr "anwenden"
+
+msgid "Brak ofert"
+msgstr "Keine Angebote"
+
+msgid "Brak ustawień dla widget-u"
+msgstr "Wählen Sie die Widget-Einstellungen"
+
+msgid "CONTRACT"
+msgstr "Vertrag"
+
+msgid "Czas pracy"
+msgstr "Arbeitszeit"
+
+msgid "Data publikacji"
+msgstr "Datum der Veröffentlichung"
+
+msgid "Data zakończenia rekrutacji"
+msgstr "Datum des Einstellungsendes"
+
+msgid "Do"
+msgstr "zu"
+
+msgid "Dodano"
+msgstr "zusätzlich"
+
+msgid "EMPLOYMENT_CONTRACT"
+msgstr "Über den Job"
+
+msgid "EMPLOYMENT_CONTRACT_TEMPORARY"
+msgstr "Die Leiharbeit"
+
+msgid "FRAMEWORK"
+msgstr "Rahmen"
+
+msgid "Godziny pracy"
+msgstr "Arbeitszeit"
+
+msgid "HRappka Lista Ofert"
+msgstr "HRappka Liste der Angebote"
+
+msgid "HRappka.pl"
+msgstr "HRappka.pl"
+
+msgid "Hash"
+msgstr "Hash"
+
+msgid "Hash firmy"
+msgstr "Hash-Unternehmen"
+
+msgid ""
+"Hash firmy można znaleść w Rekrutacja >  Integracja ze stroną www > sekcja "
+"API "
+msgstr ""
+"Den Hash des Unternehmens finden Sie im Abschnitt Personalbeschaffung> "
+"Website-Integration> API"
+
+msgid "INTERNSHIP"
+msgstr "Praxis"
+
+msgid "Ilość"
+msgstr "Anzahl"
+
+msgid "Ilość miejsc"
+msgstr "Anzahl der Sitzplätze"
+
+msgid "Klient"
+msgstr "Kunde"
+
+msgid "Końcówka adresu URL do strony ofert"
+msgstr "Das Ende der URL zur Angebotsseite"
+
+msgid ""
+"Końcówka adresu URL do strony ofert, na której będą sie wyświetlać szczegóły "
+"ofert. Należy w ustawieniach strony w sekcji 'Atrybuty strony'  wybrać "
+"szablon 'HRappka.pl' "
+msgstr ""
+"Das Ende der URL zur Angebotsseite, auf der die Angebotsdetails angezeigt "
+"werden. Wählen Sie in den Seiteneinstellungen im Abschnitt \"Attribute\" die "
+"Vorlage \"HRappka.pl\" aus"
+
+msgid "Lista widgetów"
+msgstr "List of widgets"
+
+msgid "Lokalizacja"
+msgstr "Lage"
+
+msgid "Nazwa"
+msgstr "Name"
+
+msgid "Nie podano hash-u firmy"
+msgstr "Der Hash des Unternehmens wurde nicht angegeben"
+
+msgid "Nie podano hash-u plugina"
+msgstr "Es wurde kein Hash bereitgestellt"
+
+msgid "Nie znaleziono oferty"
+msgstr "Angebot nicht gefunden"
+
+msgid "ORDER_CONTRACT"
+msgstr "Kommission"
+
+msgid "OTHER_CONTRACT"
+msgstr "Sonstiget Vertrag"
+
+msgid "Od"
+msgstr "von"
+
+msgid "Oferta"
+msgstr "Angebot"
+
+msgid "Ogólne"
+msgstr "General"
+
+msgid "Opis stanowiska"
+msgstr "Stellenbeschreibung"
+
+msgid "PERMANENT"
+msgstr "konstante"
+
+msgid "Pokaż więcej"
+msgstr "Mehr anzeigen"
+
+msgid "SEASONAL_CONTRACT"
+msgstr "Saisonale Arbeit"
+
+msgid "Serwer"
+msgstr "Server"
+
+msgid "Strona Ofert"
+msgstr "Seite Angebot"
+
+msgid "TASK_CONTRACT"
+msgstr "Arbeit"
+
+msgid "TEMPORARY"
+msgstr "vorübergehend"
+
+msgid "Termin zatrudnienia do"
+msgstr "Beschäftigungsdatum bis"
+
+msgid "Termin zatrudnienia od"
+msgstr "Beschäftigungsdatum von"
+
+msgid "Typ"
+msgstr "Typ"
+
+msgid "Typ umowy"
+msgstr "Vertragsart"
+
+msgid "Ukryj  klienta"
+msgstr "Client ausblenden"
+
+msgid "Ukryj date publikacji"
+msgstr "Datum der Veröffentlichung ausblenden"
+
+msgid "Ukryj date zakończenia rekrutacji"
+msgstr "Verbergen Sie das Enddatum der Einstellung"
+
+msgid "Ukryj godziny pracy"
+msgstr "Arbeitszeiten ausblenden"
+
+msgid "Ukryj ilość stanowisk"
+msgstr "Verstecke die Anzahl der Beiträge"
+
+msgid "Ukryj logo"
+msgstr "Verstecke das Logo"
+
+msgid "Ukryj oferujemy"
+msgstr "Verstecken wir bieten"
+
+msgid "Ukryj opis stanowiska"
+msgstr "Jobbeschreibung ausblenden"
+
+msgid "Ukryj termin zatrudnienia do"
+msgstr "Beschäftigungsdatum verbergen bis"
+
+msgid "Ukryj termin zatrudnienia od"
+msgstr "Beschäftigungsdatum verbergen von"
+
+msgid "Ukryj typ umowy"
+msgstr "Verstecke den Vertragstyp"
+
+msgid "Ukryj wymagania stanowiska"
+msgstr "Jobanforderungen ausblenden"
+
+msgid "Ukryj wynagrodzenie brutto"
+msgstr "Bruttolohn ausblenden"
+
+msgid "Ważne do"
+msgstr "Wichtig zu"
+
+msgid "Widoczne elementy na stronie"
+msgstr "Sichtbare Elemente auf der Seite"
+
+msgid "Wybierz ustawienia widget-u"
+msgstr "Wählen Sie die Widget-Einstellungen"
+
+msgid "Wymagania"
+msgstr "Positionsanforderungen"
+
+msgid "Wynagrodzenie"
+msgstr "Vergütung"
+
+msgid "Wynagrodzenie brutto"
+msgstr "Bruttoentgelt"
+
+msgid "Wyszukaj"
+msgstr "Suche"
+
+msgid "Własny css"
+msgstr "Eigenes CSS"
+
+msgid "Zapisz ustawienia"
+msgstr "Einstellungen speichern"
+
+msgid "nasze-oferty"
+msgstr "unser-Angebot"
+
+msgid "np."
+msgstr "z.B."
+
+msgid ""
+"HRappka.pl umożliwia automatyczne tworzenie listy ofert pracy oraz podstron "
+"ze szczegółami oferty i linkiem aplikacyjnym. Do poprawnego działania "
+"wtyczki wymagane jest posiadanie konta w systemie HRappka.pl."
+msgstr ""
+"Mit HRappka.pl können Sie automatisch eine Liste von Stellenangeboten und "
+"Unterseiten mit Angebotsdetails und einem Bewerbungslink erstellen. Damit "
+"das Plug-in ordnungsgemäß funktioniert, müssen Sie über ein Konto im HRappka."
+"pl-System verfügen."

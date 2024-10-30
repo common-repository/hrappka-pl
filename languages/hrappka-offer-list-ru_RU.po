@@ -1,0 +1,259 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: hrappka-offer-list\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-12 08:25+0200\n"
+"PO-Revision-Date: 2019-08-21 13:02+0000\n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Loco-Source-Locale: pl_PL\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: _;__;_e;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+"\n"
+"X-Loco-Parser: loco_parse_mo"
+
+msgid "Aplikuj"
+msgstr "применять"
+
+msgid "Brak ofert"
+msgstr "Нет предложений"
+
+msgid "Brak ustawień dla widget-u"
+msgstr "Там нет настроек для виджета"
+
+msgid "CONTRACT"
+msgstr "контракт"
+
+msgid "Czas pracy"
+msgstr "Время работы"
+
+msgid "Data publikacji"
+msgstr "Дата публикации"
+
+msgid "Data zakończenia rekrutacji"
+msgstr "Дата окончания приема на работу"
+
+msgid "Do"
+msgstr "в"
+
+msgid "Dodano"
+msgstr "добавленной"
+
+msgid "EMPLOYMENT_CONTRACT"
+msgstr "трудовой договор"
+
+msgid "EMPLOYMENT_CONTRACT_TEMPORARY"
+msgstr "О временной работе"
+
+msgid "FRAMEWORK"
+msgstr "рамочная"
+
+msgid "Godziny pracy"
+msgstr "Рабочее время"
+
+msgid "HRappka Lista Ofert"
+msgstr "HRappka Список предложений"
+
+msgid "HRappka.pl"
+msgstr "HRappka.pl"
+
+msgid "Hash"
+msgstr "гашиш"
+
+msgid "Hash firmy"
+msgstr "Хэш-компания"
+
+msgid ""
+"Hash firmy można znaleść w Rekrutacja >  Integracja ze stroną www > sekcja "
+"API "
+msgstr ""
+"Hash firmy można znaleść w Rekrutacja >  Integracja ze stroną www > sekcja "
+"API "
+
+msgid "INTERNSHIP"
+msgstr "практика"
+
+msgid "Ilość"
+msgstr "номер"
+
+msgid "Ilość miejsc"
+msgstr "Количество мест"
+
+msgid "Klient"
+msgstr "клиент"
+
+msgid "Końcówka adresu URL do strony ofert"
+msgstr "Конец URL на странице предложений"
+
+msgid ""
+"Końcówka adresu URL do strony ofert, na której będą sie wyświetlać szczegóły "
+"ofert. Należy w ustawieniach strony w sekcji 'Atrybuty strony'  wybrać "
+"szablon 'HRappka.pl' "
+msgstr ""
+"Конец URL страницы предложения, где будут отображаться детали предложения. В "
+"настройках страницы в разделе «Атрибуты» выберите шаблон «HRappka.pl»"
+
+msgid "Lista widgetów"
+msgstr "Список віджетів"
+
+msgid "Lokalizacja"
+msgstr "место"
+
+msgid "Nazwa"
+msgstr "имя"
+
+msgid "Nie podano hash-u firmy"
+msgstr "Хэш компании не был передан"
+
+msgid "Nie podano hash-u plugina"
+msgstr "Хэш не был предоставлен"
+
+msgid "Nie znaleziono oferty"
+msgstr "Предложение не найдено"
+
+msgid "ORDER_CONTRACT"
+msgstr "комиссия"
+
+msgid "OTHER_CONTRACT"
+msgstr "\tДругой договор - контракт b2b"
+
+msgid "Od"
+msgstr "от"
+
+msgid "Oferta"
+msgstr "предложение"
+
+msgid "Oferujemy"
+msgstr "Мы предлагаем"
+
+msgid "Ogólne"
+msgstr "общий"
+
+msgid "Opis stanowiska"
+msgstr "Описание работы"
+
+msgid "PERMANENT"
+msgstr "Постоянная"
+
+msgid "Pokaż więcej"
+msgstr "Показать больше"
+
+msgid "SEASONAL_CONTRACT"
+msgstr "Для сезонной работы"
+
+msgid "Serwer"
+msgstr "сервер"
+
+msgid "Strona Ofert"
+msgstr "Страница предложения"
+
+msgid "TASK_CONTRACT"
+msgstr "Дело"
+
+msgid "TEMPORARY"
+msgstr "Временная"
+
+msgid "Termin zatrudnienia do"
+msgstr "Дата приема на работу"
+
+msgid "Termin zatrudnienia od"
+msgstr "Дата приема на работу с"
+
+msgid "Typ"
+msgstr "тип"
+
+msgid "Typ umowy"
+msgstr "Тип контракта"
+
+msgid "Ukryj  klienta"
+msgstr "Скрыть клиента"
+
+msgid "Ukryj date publikacji"
+msgstr "Скрыть дату публикации"
+
+msgid "Ukryj date zakończenia rekrutacji"
+msgstr "Скрыть дату окончания приема на работу"
+
+msgid "Ukryj godziny pracy"
+msgstr "Скрыть рабочее время"
+
+msgid "Ukryj ilość stanowisk"
+msgstr "Скрыть количество постов"
+
+msgid "Ukryj logo"
+msgstr "Скрыть логотип"
+
+msgid "Ukryj oferujemy"
+msgstr "Скрыть предлагаем"
+
+msgid "Ukryj opis stanowiska"
+msgstr "Скрыть описание работы"
+
+msgid "Ukryj termin zatrudnienia do"
+msgstr "Скрыть дату приема на работу"
+
+msgid "Ukryj termin zatrudnienia od"
+msgstr "Скрыть дату приема на работу от"
+
+msgid "Ukryj typ umowy"
+msgstr "Скрыть тип контракта"
+
+msgid "Ukryj wymagania stanowiska"
+msgstr "Скрыть требования к работе"
+
+msgid "Ukryj wynagrodzenie brutto"
+msgstr "Скрыть брутто зарплату"
+
+msgid "Ważne do"
+msgstr "Важно для"
+
+msgid "Widoczne elementy na stronie"
+msgstr "Видимые элементы на странице"
+
+msgid "Wybierz ustawienia widget-u"
+msgstr "Выберите настройки виджета"
+
+msgid "Wymagania"
+msgstr "потребности"
+
+msgid "Wynagrodzenie"
+msgstr "вознаграждение"
+
+msgid "Wynagrodzenie brutto"
+msgstr "Валовое вознаграждение"
+
+msgid "Wyszukaj"
+msgstr "поиск"
+
+msgid "Własny css"
+msgstr "Собственный CSS"
+
+msgid "Zaktualizuj oferty i ustawienia widgetów"
+msgstr "Обновить предложения и настройки виджетов"
+
+msgid "Zapisz ustawienia"
+msgstr "Сохранить настройки"
+
+msgid "nasze-oferty"
+msgstr "наше предложение"
+
+msgid "np."
+msgstr "напр."
+
+msgid ""
+"HRappka.pl umożliwia automatyczne tworzenie listy ofert pracy oraz podstron "
+"ze szczegółami oferty i linkiem aplikacyjnym. Do poprawnego działania "
+"wtyczki wymagane jest posiadanie konta w systemie HRappka.pl."
+msgstr ""
+"HRappka.pl позволяет автоматически создавать список предложений работы и "
+"подстраниц с подробностями предложения и ссылкой на приложение. Для "
+"правильной работы плагина у вас должна быть учетная запись в системе HRappka."
+"pl."

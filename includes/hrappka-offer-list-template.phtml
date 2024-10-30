@@ -1,0 +1,232 @@
+<?php $before_widget = isset($before_widget) ? $before_widget : '';
+echo $before_widget; ?>
+
+     <style>
+          <?php echo esc_html($widget_settings->crw_styles) ?>
+     </style>
+
+<div class="hrappka-offer-list ">
+
+     <div class="hrappka-offer-search-bar row">
+          <!--                         <div class="col-md-12 col-xs-12 p-r-0 p-l-0">-->
+          <form method="get" class="hrappka-widget-form">
+               <input type="hidden" id="hrappka-page" name="filters[page]" value="<?php echo esc_attr($this->filters['page']) ?>">
+
+               <?php if (Hrappka_Services_Utility::is_field_visible('widget_option_filters', $view_settings)): ?>
+                    <input type="hidden" id="filter-locality-lat" name="filters[locality][lat]" value="<?php echo esc_attr($this->filters['locality']['lat']) ?>">
+                    <input type="hidden" id="filter-locality-lng" name="filters[locality][lng]" value="<?php echo esc_attr($this->filters['locality']['lng']) ?>">
+                    <input type="hidden" id="filter-locality-viewport" name="filters[locality][viewport]" value="<?php echo esc_attr($this->filters['locality']['viewport']) ?>">
+                    <input type="hidden" id="filter-locality-country" name="filters[locality][country]" value="<?php echo esc_attr($this->filters['locality']['country']) ?>">
+                    <div class="row">
+                         <div class="col-xs-10 col-xs-offset-1">
+                              <div class="col-md-5  col-xs-12 xs-m-b-10 p-l-0 xs-p-r-0">
+                                   <input name="filters[search]" class=" form-control hrappka-offer-search-name" placeholder="<?php _e('Wyszukaj', 'hrappka-offer-list') ?>" value="<?php echo esc_attr($this->filters['search']) ?>">
+                              </div>
+                              <div class="col-md-4 col-xs-12 p-l-0 p-r-0">
+                                   <input name="filters[locality][value]" class=" hr-search-locality form-control hrappka-offer-search-locality" placeholder="<?php _e('Lokalizacja', 'hrappka-offer-list') ?>" value="<?php echo esc_attr($this->filters['locality']['value']) ?>">
+                              </div>
+                              <div class="hrappka-offer-search-button col-md-3 col-xs-12 p-r-0 text-center xs-m-t-5">
+                                   <button class="btn btn-default hrappka-offer-details-btn"><?php _e('Wyszukaj', 'hrappka-offer-list') ?></button>
+                              </div>
+                         </div>
+                    </div>
+
+                    <?php wp_nonce_field('hrappka_offer_filter', 'hrappka_offer_filter_form_nonce'); ?>
+               <?php endif; ?>
+          </form>
+     </div>
+
+     <?php if (!empty($offers)): ?>
+          <?php foreach ($offers as $offer): ?>
+
+               <div class="hrappka-offer-one-offer row">
+                    <div class=" col-lg-12 col-md-12 col-xs-12 col-sm-10 m-t-5">
+                         <div class="row">
+                              <?php
+                              $is_image = false;
+                              if (property_exists($offer, 'additional')) {
+                                   $img = $offer->additional;
+                                   $is_image = Hrappka_Services_Utility::imgExist($img,$cmpHash);
+                              }
+
+                              $titleCols = [
+                                   'lg' => 11,
+                                   'sm' => 12,
+                              ];
+
+                              if ($is_image) {
+                                   $titleCols['lg'] -= 2;
+                                   $titleCols['sm'] -= 4;
+                              }
+
+                              if (!empty($view_settings)) {
+                                   $titleCols['lg'] -= 6;
+                              }
+
+                              ?>
+
+                              <?php if ($is_image): ?>
+                                   <div class="col-lg-2 col-sm-12 col-xs-12 m-b-5 hr-ad-logo">
+                                        <img src="<?php echo esc_url(Hrappka_Offer_List_Admin::host() . '/files/get/f_id/' . $img->rec_image->reca_data->f_id .'/h/' . $cmpHash )?>">
+                                   </div>
+                              <?php endif; ?>
+
+                              <div class="col-lg-<?php echo $titleCols['lg'] ?> col-sm-<?php echo $titleCols['sm'] ?> col-xs-12">
+                                   <div>
+                                        <span class="m-l-5 "><?php echo $offer->rec_title ?></span>
+                                        <?php if (Hrappka_Services_Utility::is_field_visible('rec_reference_number', $view_settings) && !empty($offer->rec_reference_number)): ?>
+                                             <span class="m-l-5 hrappka-reference-number"><?php echo $offer->rec_reference_number ?></span>
+                                        <?php endif; ?>
+                                   </div>
+                                   <div>
+                                        <?php if (!empty($offer->rec_locality) && Hrappka_Services_Utility::is_field_visible('rec_locality', $view_settings)): ?>
+                                             <i class="fa fa-map-marker-alt hr-icon-location hrappka-marker-locality" aria-hidden="true"></i>
+                                             <small> <?php echo $offer->rec_locality ?></small>
+                                        <?php endif; ?>
+                                   </div>
+                              </div>
+
+                              <div class="clearfix visible-sm-block m-b-15"></div>
+
+                              <div class="col-lg-5 col-sm-12 col-xs-12 m-b-15">
+                                   <table class="table hrappka-offer-list-table table-no-border table table-condensed ">
+                                        <?php if (!empty($offer->cc_name) && Hrappka_Services_Utility::is_field_visible('rec_contractor_fkey', $view_settings)): ?>
+                                             <tr>
+                                                  <td class="text-muted w-50-p"><?php _e('Klient', 'hrappka-offer-list') ?>:</td>
+                                                  <td class="w-50-p"><?php echo $offer->cc_name ?></td>
+                                             </tr>
+                                        <?php endif; ?>
+                                        <?php if (!empty($offer->rec_work_type) && Hrappka_Services_Utility::is_field_visible('rec_work_type', $view_settings)): ?>
+                                             <tr>
+                                                  <td class="text-muted w-50-p"><?php _e('Typ', 'hrappka-offer-list') ?>:</td>
+                                                  <td class=" w-50-p"><?php _e($offer->rec_work_type, 'hrappka-offer-list') ?></td>
+                                             </tr>
+                                        <?php endif; ?>
+                                        <?php if (!empty($offer->rec_employment_form) && Hrappka_Services_Utility::is_field_visible('rec_employment_form', $view_settings)): ?>
+                                             <tr>
+                                                  <td class="text-muted w-50-p"><?php _e('Typ umowy') ?>:</td>
+                                                  <td class=" w-50-p"><?php _e($offer->rec_employment_form, 'hrappka-offer-list') ?></td>
+                                             </tr>
+                                        <?php endif; ?>
+                                        <?php if (!empty($offer->rec_working_time) && Hrappka_Services_Utility::is_field_visible('rec_working_time', $view_settings)): ?>
+                                             <tr>
+                                                  <td class="text-muted w-50-p"><?php _e('Czas pracy', 'hrappka-offer-list') ?>:</td>
+                                                  <td class="w-50-p"><?php $offer->rec_working_time ?></td>
+                                             </tr>
+                                        <?php endif; ?>
+                                        <?php if (!empty($offer->rec_salary_amount) && Hrappka_Services_Utility::is_field_visible('rec_salary', $view_settings)): ?>
+                                             <tr>
+                                                  <td class="text-muted w-50-p"><?php _e('Wynagrodzenie', 'hrappka-offer-list') ?>:</td>
+                                                  <td class=" w-50-p"><?php echo $offer->rec_salary_print ?></td>
+                                             </tr>
+                                        <?php endif; ?>
+                                        <?php if (!empty($offer->rec_working_hours) && Hrappka_Services_Utility::is_field_visible('rec_working_hours', $view_settings)): ?>
+                                             <tr>
+                                                  <td class="text-muted w-50-p"><?php _e('Od', 'hrappka-offer-list') ?>:</td>
+                                                  <td class=" w-50-p"><?php echo json_decode($offer->rec_working_hours)->rec_working_hours_from ?></td>
+                                             </tr>
+                                             <tr>
+                                                  <td class="text-muted w-50-p"><?php _e('Do', 'hrappka-offer-list') ?>:</td>
+                                                  <td class=" w-50-p"><?php echo json_decode($offer->rec_working_hours)->rec_working_hours_to ?></td>
+                                             </tr>
+                                        <?php endif; ?>
+                                        <?php if (!empty($offer->rec_quantity) && Hrappka_Services_Utility::is_field_visible('rec_quantity', $view_settings)): ?>
+                                             <tr>
+                                                  <td class="text-muted w-50-p"><?php _e('Ilość', 'hrappka-offer-list') ?>:</td>
+                                                  <td class="w-50-p"><?php echo $offer->rec_quantity ?></td>
+                                             </tr>
+                                        <?php endif; ?>
+                                   </table>
+                              </div>
+
+                              <div class="col-lg-2 col-xs-12 col-sm-12 m-t-5">
+                                   <a class="btn btn-default hrappka-offer-details-link xs-float-left xs-m-b-5" href="<?php echo esc_url('/' . $offerPage  .'/?rec_id=' . $offer->rec_id ) ?>" target="_blank"><?php _e('Pokaż więcej', 'hrappka-offer-list') ?></a>
+                                   <div class="row">
+                                        <div class="col-md-12 col-xs-12">
+                                             <div class="m-t-15">
+                                                  <?php if (Hrappka_Services_Utility::is_field_visible('widget_option_rec_creation_time', $view_settings) && $offer->rec_creation_time != '0000-00-00 00:00:00') : ?>
+                                                       <div class="hrappka-widget-date "><span class="text-muted"><?php _e('Dodano', 'hrappka-offer-list'); ?>:</span> <?php echo date(Hrappka_Offer_List_Admin::DATE_FORMAT, strtotime($offer->rec_creation_time)) ?></div>
+                                                  <?php endif; ?>
+                                                  <?php if (Hrappka_Services_Utility::is_field_visible('widget_option_rec_end_date', $view_settings) && $offer->rec_end_date != '0000-00-00 00:00:00') : ?>
+                                                       <div class="hrappka-widget-date "><span class="text-muted"><?php _e('Ważne do', 'hrappka-offer-list'); ?>:</span> <?php echo date(Hrappka_Offer_List_Admin::DATE_FORMAT, strtotime($offer->rec_end_date)); ?></div>
+                                                  <?php endif; ?>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+
+               </div>
+          <?php endforeach; ?>
+
+     <?php else: ?>
+          <div class="text-center m-b-10 m-t-10">
+               <?php _e('Brak ofert','hrappka-offer-list') ?>
+          </div>
+     <?php endif; ?>
+     <?php if (!empty($offers) && 1 < $total_pages): ?>
+          <div class="row">
+               <div class="col-md-12 col-xs-12 text-center">
+                    <nav>
+                         <ul class="pagination pagination-sm hrappka-pagination" data-hrappka-total-pages="<?php echo $total_pages ?>">
+                              <li>
+                                   <a href="javascript:void(0)" class="hrappka-pagination-page-prev" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                   </a>
+                              </li>
+                              <?php if ($total_pages < 11): ?>
+                                   <?php for ($i = 1; $i < $total_pages + 1; ++$i): ?>
+                                        <li class="<?php echo $i == $this->filters['page'] ? 'active' : '' ?>  hrappka-pagination-page" data-hrappka-page-number="<?php echo $i ?>"><a href="javascript:void(0)"><?php echo $i ?></a></li>
+                                   <?php endfor; ?>
+                              <?php else: ?>
+                                   <?php
+                                   $leftRight = 4;
+                                   $current_page = $this->filters['page'];
+                                   ?>
+                                   <li class="<?php echo 1 == $this->filters['page'] ? 'active' : '' ?>  hrappka-pagination-page" data-hrappka-page-number="<?php echo 1 ?>"><a href="javascript:void(0)"><?php echo 1 ?></a></li>
+
+                                   <?php for ($i = $leftRight - 1; 0 <= $i; --$i): ?>
+                                        <?php if ($i == $leftRight - 1 && 2 < $current_page - $i): ?>
+                                             <li class=""><a href="javascript:void(0)">...</a></li>
+                                        <?php endif; ?>
+                                        <?php if (1 < ($current_page - $i)): ?>
+                                             <li class="<?php echo $current_page - $i == $current_page ? 'active' : '' ?>  hrappka-pagination-page" data-hrappka-page-number="<?php echo $current_page - $i ?>"><a href="javascript:void(0)"><?php echo $current_page - $i ?></a></li>
+                                        <?php endif ?>
+                                   <?php endfor; ?>
+
+                                   <?php for ($i = 1; $i < $leftRight; ++$i): ?>
+                                        <?php if (($current_page + $i) < $total_pages): ?>
+                                             <li class="  hrappka-pagination-page" data-hrappka-page-number="<?php echo $current_page + $i ?>"><a href="javascript:void(0)"><?php echo $current_page + $i ?></a></li>
+                                        <?php endif ?>
+                                        <?php if ($i == $leftRight - 1 && $current_page + $i < $total_pages - 1): ?>
+                                             <li class=""><a href="javascript:void(0)">...</a></li>
+                                        <?php endif; ?>
+                                   <?php endfor; ?>
+
+                                   <?php if ($current_page != $total_pages): ?>
+                                        <li class="<?php echo $total_pages == $this->filters['page'] ? 'active' : '' ?>  hrappka-pagination-page" data-hrappka-page-number="<?php echo $total_pages ?>"><a href="javascript:void(0)"><?php echo $total_pages ?></a></li>
+                                   <?php endif; ?>
+                              <?php endif; ?>
+                              <li>
+                                   <a href="javascript:void(0)" class="hrappka-pagination-page-next" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                   </a>
+                              </li>
+                         </ul>
+                    </nav>
+               </div>
+          </div>
+     <?php endif; ?>
+     <div class="row text-center">
+          <div class="col-xs-12">
+               Powered by <a href="<?php echo esc_url('https://hrappka.pl') ?>" class="hrappka-power-by" rel="nofollow">HRappka.pl</a>
+          </div>
+     </div>
+</div>
+
+<?php
+$after_widget = isset($after_widget) ? $after_widget : '';
+echo $after_widget;
+?>

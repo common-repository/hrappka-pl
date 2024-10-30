@@ -1,0 +1,326 @@
+
+.hrappka-offer-one-offer  {
+    font-size: 18px;
+}
+
+.hrappka-offer-one-offer {
+    margin-bottom: 15px;
+    /*border-bottom: 3px solid #95c11f;*/
+    display: block;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: 0.3s;
+    position: relative;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+    padding: 10px 0 10px 0;
+}
+
+.hrappka-offer-search-bar {
+    margin-bottom: 20px;
+}
+
+.hrappka-offer-one-offer small {
+    margin-left: 5px;
+}
+
+.hrappka-offer-details-link.btn {
+    width: auto;
+    outline: none;
+    border: none;
+    border-bottom: 0;
+    border-radius: 4px;
+    color: #fff !important;
+    background: #95c11f;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 6px 12px;
+    vertical-align: sub;
+}
+
+.hrappka-offer-details-btn.btn {
+    width: auto;
+    outline: none;
+    border: none;
+    border-bottom: 0;
+    color: #fff !important;
+    background: #95c11f;
+    letter-spacing: 2.5px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 16px;;
+    vertical-align: text-bottom;
+    font-size: 18px;
+
+}
+.btn {
+    white-space: normal;
+}
+
+.hrappka-marker-locality {
+    color: gray;
+    font-size: 18px !important;
+    margin-left: 5px;
+}
+
+.hrappka-offer-title {
+    padding: 10px;
+}
+
+.hrappka-offer-one-info {
+    background-color: #f9f9f9;
+    line-height: 20px;
+    border-radius: 0 0 4px 4px;
+    padding: 5px;
+}
+
+.hrappka-offer-one-position {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .xs-m-b-10 {
+        margin-bottom: 10px;
+    }
+    .xs-m-b-5 {
+        margin-bottom: 5px;
+    }
+
+    .xs-text-center {
+        text-align: center;
+    }
+    .xs-float-left {
+        float: left;
+    }
+
+    .xs-m-t-5 {
+        margin-top: 5px;
+    }
+
+    .xs-p-l-0 {
+        padding-left: 0;
+    }
+
+    .xs-p-r-0 {
+        padding-right: 0;
+    }
+
+}
+.m-l-5 {
+    margin-left: 5px;
+}
+
+.m-t-5 {
+    margin-top: 5px;
+}
+
+.m-t-10 {
+    margin-top: 10px;
+}
+
+.m-b-10 {
+    margin-bottom: 10px;
+}
+
+.p-l-0 {
+    padding-left: 0;
+}
+
+.p-r-0 {
+    padding-right: 0;
+}
+
+.w-50-p {
+ width: 50%;
+}
+
+.text-muted {
+    color: #777;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.table-no-border table,
+.table-no-border td,
+.table-no-border th,
+.table-no-border tbody {
+    border: none !important;
+}
+
+.table.table-condensed tbody,
+.table.table-condensed thead,
+.table.table-condensed tr,
+.table.table-condensed td,
+.table.table-condensed th {
+    padding: 3px;
+    line-height: 1.1;
+}
+
+.table-condensed td {
+    width: 50%;
+}
+
+.table,
+table td,
+table th {
+    padding: 0.1em !important;
+}
+.hrappka-pagination {
+    display: inline-block !important;
+}
+
+.hrappka-pagination > li {
+    display: inline !important;
+}
+
+.hrappka-pagination > li > a,
+.hrappka-pagination > li > span {
+    color: #95c11f;
+}
+
+.hrappka-pagination > li > a:hover,
+.hrappka-pagination > li > span:hover {
+    color: #95c11f;
+}
+
+.hrappka-pagination > .active > a{
+    color: #fff;
+}
+
+.hrappka-pagination > .active > a:hover{
+    background: #95c11f;
+    border: 1px solid #95c11f;
+}
+
+.hrappka-pagination > .active > a{
+    background: #95c11f;
+    border: 1px solid #95c11f;
+}
+
+.hrappka-offer-list-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+
+}
+
+
+
+.hrappa-job-overview {
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+.hrappa-job-overview-headline {
+    color: #333;
+    font-size: 20px;
+    padding: 20px 35px;
+    background-color: #f0f0f0;
+    position: relative;
+    border-radius: 4px 4px 0 0;
+}
+
+.hrappa-job-overview-inner {
+    padding: 35px;
+}
+.hrappa-job-overview-inner ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.hrappa-job-overview-inner li {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    padding-left: 38px;
+    margin-bottom: 25px;
+}
+.hrappa-job-overview-inner :last-child {
+     margin-bottom: 0;
+ }
+.hrappa-job-overview-inner span {
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.hrappa-job-overview-inner h5 {
+    font-weight: 500;
+    color:  #666;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
+.hrappa-job-overview-inner i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    color: #95c11f;
+}
+.hrappa-rec-title {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 50px 10px;
+    margin: 0 0 30px 0;
+    border-radius: 4px;
+    content: '';
+
+}
+
+.hrappka-apply-link {
+    color: #fff;
+    text-decoration: none;
+    background: #95c11f;
+}
+
+.hrappka-apply-link:hover {
+    background: #95c11f;
+}
+
+.hrappka-power-by {
+    color: #95c11f !important;
+}
+
+.hrappka-apply-link:visited {
+    color: #fff;
+}
+
+.hr-icon-location:before {
+    content: '\e800';
+}
+
+.hrappka-widget-date {
+    font-size: 15px;
+}
+
+.hrappka-offer-search-name  {
+    height: 46px !important;
+    padding: 10px 16px !important;;
+    font-size: 15px !important;;
+    line-height: 1.3333333 !important;;
+    border-radius: 4px;
+}
+
+.hrappka-offer-search-locality {
+    height: 46px !important;;
+    padding: 10px 16px !important;;
+    font-size: 15px !important;;
+    line-height: 1.3333333 !important;;
+    border-radius: 4px;
+}
+
+.hrappka-reference-number {
+    color: #777;
+    font-size: 14px;
+}
+
+.hrappka-no-offer-found-info {
+    height: 100vh;
+}

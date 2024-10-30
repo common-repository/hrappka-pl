@@ -1,0 +1,339 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: hrappka-offer-list\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-12 08:27+0200\n"
+"PO-Revision-Date: 2019-08-21 12:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: English\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Loco-Source-Locale: pl_PL\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: _;__;_e;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+"\n"
+"X-Loco-Parser: loco_parse_po"
+
+#: Hrappka-offer-list.php:34 includes/Hrappka_Offer_List_Admin.php:123 
+#: includes/Hrappka_Offer_List_Admin.php:124
+msgid "HRappka.pl"
+msgstr "HRappka.pl"
+
+#: Hrappka-offer-list.php:90
+msgid "Wybierz ustawienia widget-u"
+msgstr "Choose the widget settings"
+
+#: Hrappka-offer-list.php:120
+msgid "Nie podano hash-u firmy"
+msgstr "The company hash was not given"
+
+#: Hrappka-offer-list.php:134
+msgid "Nie podano hash-u plugina"
+msgstr "No plugin  hash has been provided"
+
+#: Hrappka-offer-list.php:150
+msgid "Brak ustawień dla widget-u"
+msgstr "There are no settings for the widget"
+
+#: includes/Hrappka_Offer_List_Admin.php:187
+msgid "EMPLOYMENT_CONTRACT"
+msgstr "Employment temporary"
+
+#: includes/Hrappka_Offer_List_Admin.php:188
+msgid "EMPLOYMENT_CONTRACT_TEMPORARY"
+msgstr "Employment temporary"
+
+#: includes/Hrappka_Offer_List_Admin.php:189
+msgid "ORDER_CONTRACT"
+msgstr "Order contract"
+
+#: includes/Hrappka_Offer_List_Admin.php:190
+msgid "OTHER_CONTRACT"
+msgstr "Other contract"
+
+#: includes/Hrappka_Offer_List_Admin.php:191
+msgid "TASK_CONTRACT"
+msgstr "Task contract"
+
+#: includes/Hrappka_Offer_List_Admin.php:192
+msgid "PERMANENT"
+msgstr "Pernament"
+
+#: includes/Hrappka_Offer_List_Admin.php:193
+msgid "TEMPORARY"
+msgstr "Temporary"
+
+#: includes/Hrappka_Offer_List_Admin.php:194
+msgid "FRAMEWORK"
+msgstr "Framework"
+
+#: includes/Hrappka_Offer_List_Admin.php:195
+msgid "SEASONAL_CONTRACT"
+msgstr "Seasonal work"
+
+#: includes/Hrappka_Offer_List_Admin.php:196
+msgid "INTERNSHIP"
+msgstr "Practice"
+
+#: includes/Hrappka_Offer_List_Admin.php:197
+msgid "CONTRACT"
+msgstr "Contract"
+
+#: includes/Hrappka_Offer_List_Admin.php:199
+msgid "Wymagania"
+msgstr "Requirements"
+
+#: includes/Hrappka_Offer_List_Admin.php:200
+msgid "Oferujemy"
+msgstr "Offer"
+
+#: includes/Hrappka_Offer_List_Admin.php:202
+msgid "Opis stanowiska"
+msgstr "Job description"
+
+#: includes/Hrappka_Offer_List_Admin.php:203 
+#: includes/hrappka-offer-list-admin-template.phtml:21
+msgid "nasze-oferty"
+msgstr "our-offers"
+
+#: includes/hrappka-offer-view.php:116
+msgid "Aplikuj"
+msgstr "Apply"
+
+#: includes/hrappka-offer-view.php:125
+msgid "Oferta"
+msgstr "Offer"
+
+#: includes/hrappka-offer-view.php:132
+msgid "Wynagrodzenie brutto"
+msgstr "Gross salary"
+
+#: includes/hrappka-offer-view.php:141 
+#: includes/hrappka-offer-list-template.phtml:122
+msgid "Typ umowy"
+msgstr "Contract type"
+
+#: includes/hrappka-offer-view.php:153 
+#: includes/hrappka-offer-list-template.phtml:110
+msgid "Klient"
+msgstr "Client"
+
+#: includes/hrappka-offer-view.php:165
+msgid "Data publikacji"
+msgstr "Date of publication"
+
+#: includes/hrappka-offer-view.php:175
+msgid "Godziny pracy"
+msgstr "Work hours"
+
+#: includes/hrappka-offer-view.php:186
+msgid "Ilość miejsc"
+msgstr "Quantity"
+
+#: includes/hrappka-offer-view.php:196
+msgid "Termin zatrudnienia od"
+msgstr "Date of employment from"
+
+#: includes/hrappka-offer-view.php:206
+msgid "Termin zatrudnienia do"
+msgstr "Date of employment to"
+
+#: includes/hrappka-offer-view.php:216 includes/hrappka-offer-view.php:227
+msgid "Data zakończenia rekrutacji"
+msgstr "Date of recruitment end"
+
+#: includes/hrappka-offer-view.php:245
+msgid "Nie znaleziono oferty"
+msgstr "Offer not found"
+
+#: includes/hrappka-offer-list-admin-template.phtml:3
+msgid "HRappka Lista Ofert"
+msgstr "HRappka Offers List"
+
+#: includes/hrappka-offer-list-admin-template.phtml:9
+msgid "Ogólne"
+msgstr "General"
+
+#: includes/hrappka-offer-list-admin-template.phtml:10
+msgid "Strona Ofert"
+msgstr "Offer page"
+
+#: includes/hrappka-offer-list-admin-template.phtml:11
+msgid "Lista widgetów"
+msgstr "List of widgets"
+
+#: includes/hrappka-offer-list-admin-template.phtml:19
+msgid "Końcówka adresu URL do strony ofert"
+msgstr "The end of the URL to the offers page"
+
+#: includes/hrappka-offer-list-admin-template.phtml:21 
+#: includes/hrappka-offer-list-admin-template.phtml:47
+msgid "np."
+msgstr "e.g."
+
+#: includes/hrappka-offer-list-admin-template.phtml:27
+msgid ""
+"Końcówka adresu URL do strony ofert, na której będą sie wyświetlać szczegóły "
+"ofert. Należy w ustawieniach strony w sekcji 'Atrybuty strony'  wybrać "
+"szablon 'HRappka.pl' "
+msgstr ""
+"The end of the URL to the offer page where the offer details will be "
+"displayed. In the page settings in the 'Attributes' section, select the "
+"'HRappka.pl' template"
+
+#: includes/hrappka-offer-list-admin-template.phtml:33
+msgid "Hash firmy"
+msgstr "Hash company"
+
+#: includes/hrappka-offer-list-admin-template.phtml:38
+msgid ""
+"Hash firmy można znaleść w Rekrutacja >  Integracja ze stroną www > sekcja "
+"API "
+msgstr ""
+"The company's hash can be found in Recruitment> Website Integration> API "
+"section"
+
+#: includes/hrappka-offer-list-admin-template.phtml:45
+msgid "Serwer"
+msgstr "Server"
+
+#: includes/hrappka-offer-list-admin-template.phtml:60
+msgid "Widoczne elementy na stronie"
+msgstr "Visible elements on the page"
+
+#: includes/hrappka-offer-list-admin-template.phtml:68
+msgid "Ukryj logo"
+msgstr "Hide the logo"
+
+#: includes/hrappka-offer-list-admin-template.phtml:78
+msgid "Ukryj wynagrodzenie brutto"
+msgstr "Hide salary"
+
+#: includes/hrappka-offer-list-admin-template.phtml:88
+msgid "Ukryj typ umowy"
+msgstr "Hide the type of contract"
+
+#: includes/hrappka-offer-list-admin-template.phtml:98
+msgid "Ukryj  klienta"
+msgstr "Hide client"
+
+#: includes/hrappka-offer-list-admin-template.phtml:108 
+#: includes/hrappka-offer-list-admin-template.phtml:150
+msgid "Ukryj date publikacji"
+msgstr "Hide the date of publication"
+
+#: includes/hrappka-offer-list-admin-template.phtml:119
+msgid "Ukryj opis stanowiska"
+msgstr "Hide job description"
+
+#: includes/hrappka-offer-list-admin-template.phtml:130
+msgid "Ukryj oferujemy"
+msgstr "Hide  offer"
+
+#: includes/hrappka-offer-list-admin-template.phtml:140
+msgid "Ukryj wymagania stanowiska"
+msgstr "Hide job requirements"
+
+#: includes/hrappka-offer-list-admin-template.phtml:160
+msgid "Ukryj date zakończenia rekrutacji"
+msgstr "Hide the recruitment end date"
+
+#: includes/hrappka-offer-list-admin-template.phtml:170
+msgid "Ukryj termin zatrudnienia od"
+msgstr "Hide the date of employment from"
+
+#: includes/hrappka-offer-list-admin-template.phtml:180
+msgid "Ukryj termin zatrudnienia do"
+msgstr "Hide the date of employment to"
+
+#: includes/hrappka-offer-list-admin-template.phtml:190
+msgid "Ukryj ilość stanowisk"
+msgstr "Hide the number of posts"
+
+#: includes/hrappka-offer-list-admin-template.phtml:200
+msgid "Ukryj godziny pracy"
+msgstr "Hide working hours"
+
+#: includes/hrappka-offer-list-admin-template.phtml:205
+msgid "Własny css"
+msgstr "Custom css"
+
+#: includes/hrappka-offer-list-admin-template.phtml:219
+msgid "Nazwa"
+msgstr "Name"
+
+#: includes/hrappka-offer-list-admin-template.phtml:220
+msgid "Hash"
+msgstr "Hash"
+
+#: includes/hrappka-offer-list-admin-template.phtml:241
+msgid "Zapisz ustawienia"
+msgstr "Save settings"
+
+#: includes/hrappka-offer-list-admin-template.phtml:250
+#, fuzzy
+msgid "Zaktualizuj oferty i ustawienia widgetów"
+msgstr "Update  offers and widget settings"
+
+#: includes/hrappka-offer-list-template.phtml:23 
+#: includes/hrappka-offer-list-template.phtml:29
+msgid "Wyszukaj"
+msgstr "Search"
+
+#: includes/hrappka-offer-list-template.phtml:26
+msgid "Lokalizacja"
+msgstr "Location"
+
+#: includes/hrappka-offer-list-template.phtml:116
+msgid "Typ"
+msgstr "Type"
+
+#: includes/hrappka-offer-list-template.phtml:128
+msgid "Czas pracy"
+msgstr "Work time"
+
+#: includes/hrappka-offer-list-template.phtml:134
+msgid "Wynagrodzenie"
+msgstr "Salary"
+
+#: includes/hrappka-offer-list-template.phtml:140
+msgid "Od"
+msgstr "From"
+
+#: includes/hrappka-offer-list-template.phtml:144
+msgid "Do"
+msgstr "To"
+
+#: includes/hrappka-offer-list-template.phtml:150
+msgid "Ilość"
+msgstr "Quantity"
+
+#: includes/hrappka-offer-list-template.phtml:158
+msgid "Pokaż więcej"
+msgstr "Show more"
+
+#: includes/hrappka-offer-list-template.phtml:163
+msgid "Dodano"
+msgstr "Added"
+
+#: includes/hrappka-offer-list-template.phtml:166
+msgid "Ważne do"
+msgstr "Important to"
+
+#: includes/hrappka-offer-list-template.phtml:181
+msgid "Brak ofert"
+msgstr "No offers"
+
+msgid ""
+"HRappka.pl umożliwia automatyczne tworzenie listy ofert pracy oraz podstron "
+"ze szczegółami oferty i linkiem aplikacyjnym. Do poprawnego działania "
+"wtyczki wymagane jest posiadanie konta w systemie HRappka.pl."
+msgstr ""
+"HRappka.pl allows you to automatically create a list of job offers and "
+"subpages with offer details and an application link. In order for the plug-"
+"in to function properly, you must have an account in the HRappka.pl system."

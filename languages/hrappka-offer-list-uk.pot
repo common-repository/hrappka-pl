@@ -1,0 +1,250 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: hrappka-offer-list\n"
+"POT-Creation-Date: 2019-07-05 10:04+0200\n"
+"PO-Revision-Date: 2019-07-05 10:16+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: _;__;_e;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Hrappka-offer-list.php:33 includes/Hrappka_Offer_List_Admin.php:105
+#: includes/Hrappka_Offer_List_Admin.php:121
+msgid "Hrappka Lista Ofert"
+msgstr "Hrappka Lista OfertUstawienia strony oferty"
+
+#: Hrappka-offer-list.php:151
+msgid "Nie podano hash-u firmy"
+msgstr "Nie podano hash-u firmy"
+
+#: Hrappka-offer-list.php:156
+msgid "Nie podano hash-u plugina"
+msgstr "Nie podano hash-u plugina"
+
+#: Hrappka-offer-list.php:176
+msgid "Podano hash widgetu ale nie pobrano ustawień"
+msgstr "Podano hash widgetu ale nie pobrano ustawień"
+
+#: Hrappka-offer-list.php:199 Hrappka-offer-list.php:205
+msgid "Wyszukaj"
+msgstr "Wyszukaj"
+
+#: Hrappka-offer-list.php:202
+msgid "Lokalizacja"
+msgstr "Lokalizacja"
+
+#: Hrappka-offer-list.php:273 includes/hrappka-offer-view.php:131
+msgid "Klient"
+msgstr "Klient"
+
+#: Hrappka-offer-list.php:279
+msgid "Typ"
+msgstr "Typ"
+
+#: Hrappka-offer-list.php:285 includes/hrappka-offer-view.php:119
+msgid "Typ umowy"
+msgstr "Typ umowy"
+
+#: Hrappka-offer-list.php:291
+msgid "Czas pracy"
+msgstr "Czas pracy"
+
+#: Hrappka-offer-list.php:297
+msgid "Wynagrodzenie"
+msgstr "Wynagrodzenie"
+
+#: Hrappka-offer-list.php:303
+msgid "Od"
+msgstr "Od"
+
+#: Hrappka-offer-list.php:307
+msgid "Do"
+msgstr "Do"
+
+#: Hrappka-offer-list.php:313
+msgid "Ilość"
+msgstr "Ilość"
+
+#: Hrappka-offer-list.php:323
+msgid "Pokaż więcej"
+msgstr "Pokaż więcej"
+
+#: Hrappka-offer-list.php:328
+msgid "Dodano"
+msgstr "Dodano"
+
+#: Hrappka-offer-list.php:331
+msgid "Ważne do"
+msgstr "Ważne do"
+
+#: Hrappka-offer-list.php:342
+msgid "Brak ofert"
+msgstr "Brak ofert"
+
+#: includes/Hrappka_Offer_List_Admin.php:104
+msgid "Hrappk Lista Ofert"
+msgstr "Hrappk Lista Ofert"
+
+#: includes/Hrappka_Offer_List_Admin.php:128
+msgid "Link do strony ofert"
+msgstr "Link do strony ofert"
+
+#: includes/Hrappka_Offer_List_Admin.php:134
+msgid "Hash firmy"
+msgstr "Hash firmy"
+
+#: includes/Hrappka_Offer_List_Admin.php:141
+msgid "Host"
+msgstr "Host"
+
+#: includes/Hrappka_Offer_List_Admin.php:147
+msgid "Ustawienia strony oferty"
+msgstr "Ustawienia strony oferty"
+
+#: includes/Hrappka_Offer_List_Admin.php:155
+msgid "Ukryj logo"
+msgstr "Ukryj logo"
+
+#: includes/Hrappka_Offer_List_Admin.php:165
+msgid "Ukryj wynagrodzenie brutto"
+msgstr "Ukryj wynagrodzenie brutto"
+
+#: includes/Hrappka_Offer_List_Admin.php:175
+msgid "Ukryj typ umowy"
+msgstr "Ukryj typ umowy"
+
+#: includes/Hrappka_Offer_List_Admin.php:185
+msgid "Ukryj  klienta"
+msgstr "Ukryj  klienta"
+
+#: includes/Hrappka_Offer_List_Admin.php:195
+#: includes/Hrappka_Offer_List_Admin.php:237
+msgid "Ukryj date publikacji"
+msgstr "Ukryj date publikacji"
+
+#: includes/Hrappka_Offer_List_Admin.php:206
+msgid "Ukryj opis stanowiska"
+msgstr "Ukryj opis stanowiska"
+
+#: includes/Hrappka_Offer_List_Admin.php:217
+#, fuzzy
+#| msgid "Ukryj typ umowy"
+msgid "Ukryj oferujemy"
+msgstr "Ukryj typ umowy"
+
+#: includes/Hrappka_Offer_List_Admin.php:227
+msgid "Ukryj wymagania stanowiska"
+msgstr "Ukryj wymagania stanowiska"
+
+#: includes/Hrappka_Offer_List_Admin.php:247
+#, fuzzy
+#| msgid "Ukryj date publikacji"
+msgid "Ukryj date zakończenia rekrutacji"
+msgstr "Ukryj date publikacji"
+
+#: includes/Hrappka_Offer_List_Admin.php:257
+msgid "Ukryj termin zatrudnienia od"
+msgstr "Ukryj termin zatrudnienia od"
+
+#: includes/Hrappka_Offer_List_Admin.php:267
+msgid "Ukryj termin zatrudnienia do"
+msgstr "Ukryj termin zatrudnienia do"
+
+#: includes/Hrappka_Offer_List_Admin.php:277
+#, fuzzy
+#| msgid "Ukryj opis stanowiska"
+msgid "Ukryj ilość stanowisk"
+msgstr "Ukryj opis stanowiska"
+
+#: includes/Hrappka_Offer_List_Admin.php:287
+msgid "Ukryj godziny pracy"
+msgstr "Ukryj godziny pracy"
+
+#: includes/Hrappka_Offer_List_Admin.php:344
+msgid "EMPLOYMENT_CONTRACT"
+msgstr "Kontrakt"
+
+#: includes/Hrappka_Offer_List_Admin.php:345
+msgid "ORDER_CONTRACT"
+msgstr "Umowa zlecenie"
+
+#: includes/Hrappka_Offer_List_Admin.php:346
+msgid "OTHER_CONTRACT"
+msgstr "Inna"
+
+#: includes/Hrappka_Offer_List_Admin.php:347
+msgid "TASK_CONTRACT"
+msgstr "Umowa o dzieło"
+
+#: includes/Hrappka_Offer_List_Admin.php:348
+msgid "PERMANENT"
+msgstr "Stała"
+
+#: includes/Hrappka_Offer_List_Admin.php:349
+msgid "TEMPORARY"
+msgstr "Tymczasowa"
+
+#: includes/Hrappka_Offer_List_Admin.php:350
+msgid "FRAMEWORK"
+msgstr "Ramowa"
+
+#: includes/hrappka-offer-view.php:94
+msgid "Aplikuj"
+msgstr "Aplikuj"
+
+#: includes/hrappka-offer-view.php:103
+msgid "Oferta"
+msgstr "Oferta"
+
+#: includes/hrappka-offer-view.php:110
+msgid "Wynagrodzenie brutto"
+msgstr "Wynagrodzenie brutto"
+
+#: includes/hrappka-offer-view.php:143
+msgid "Data publikacji"
+msgstr "Data publikacji"
+
+#: includes/hrappka-offer-view.php:153
+#, fuzzy
+#| msgid "Czas pracy"
+msgid "Godziny pracy"
+msgstr "Czas pracy"
+
+#: includes/hrappka-offer-view.php:164
+#, fuzzy
+#| msgid "Ilość"
+msgid "Ilość miejsc"
+msgstr "Ilość"
+
+#: includes/hrappka-offer-view.php:174
+msgid "Termin zatrudnienia od"
+msgstr "Termin zatrudnienia od"
+
+#: includes/hrappka-offer-view.php:184
+msgid "Termin zatrudnienia do"
+msgstr "Termin zatrudnienia do"
+
+#: includes/hrappka-offer-view.php:194 includes/hrappka-offer-view.php:205
+msgid "Data zakończenia rekrutacji"
+msgstr "Data zakończenia rekrutacji"
+
+#: includes/hrappka-offer-view.php:223
+msgid "Nie znaleziono oferty"
+msgstr "Nie znaleziono oferty"
+
+#~ msgid "Opis stanowiska"
+#~ msgstr "Opis stanowiska"
+
+#~ msgid "Wymagania stanowiska"
+#~ msgstr "Wymagania stanowiska"
+
+#~ msgid "rec_employment_form"
+#~ msgstr "Typ umowy"

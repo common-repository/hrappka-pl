@@ -1,0 +1,253 @@
+<div class="">
+     <div class="col-md-12 col-xs-12">
+          <h3><?php _e('HRappka Lista Ofert', 'hrappka-offer-list') ?></h3>
+          <form action="options.php" method="post">
+               <?php settings_fields('hrappka-offer-list-settings'); ?>
+               <?php do_settings_sections('hrappka-offer-list-settings'); ?>
+
+               <ul class="nav nav-tabs">
+                    <li role="presentation" class="active"><a data-toggle="tab" href="#hrappka_settings"><?php _e('Ogólne', 'hrappka-offer-list') ?></a></li>
+                    <li role="presentation"><a data-toggle="tab" href="#hrappka_offers_page_settings"><?php _e('Strona Ofert', 'hrappka-offer-list') ?></a></li>
+                    <li role="presentation"><a data-toggle="tab" href="#hrappka_offers_hash_list"><?php _e('Lista widgetów', 'hrappka-offer-list') ?></a></li>
+               </ul>
+               <div class="tab-content hrappka-tab-content">
+                    <div class="tab-pane active" id="hrappka_settings">
+                         <div class="row">
+                              <div class="col-md-12 col-xs-12">
+                                   <div class="form-group row">
+                                        <label for="hrappka_widget_offer_page" class="control-label col-md-3 col-xs-12">
+                                             <?php _e('Końcówka adresu URL do strony ofert', 'hrappka-offer-list') ?>
+                                             <small class="hrappka-example-text">
+                                                  <?php _e('np.','hrappka-offer-list') ?>&nbsp;<?php _e('nasze-oferty','hrappka-offer-list') ?>
+                                             </small>
+                                        </label>
+                                        <div class="col-md-7 col-xs-12">
+                                             <input name="hrappka_widget_offer_page" id="hrappka_widget_offer_page" type="text" class="form-control" value="<?php echo get_option(static::OFFER_PAGE); ?>" required>
+                                             <span class="description">
+                                                  <?php _e("Końcówka adresu URL do strony ofert, na której będą sie wyświetlać szczegóły ofert. Należy w ustawieniach strony w sekcji 'Atrybuty strony'  wybrać szablon 'HRappka.pl' ", 'hrappka-offer-list') ?>
+                                             </span>
+                                        </div>
+                                   </div>
+                                   <div class="form-group row">
+                                        <label for="hrappka_company_hash" class="col-md-3 col-xs-12 relative">
+                                             <?php _e('Hash firmy', 'hrappka-offer-list') ?>
+                                        </label>
+                                        <div class="col-md-7 col-xs-12">
+                                             <input name="hrappka_company_hash" id="hrappka_company_hash" type="text" class="form-control" value="<?php echo get_option(static::COMPANY_HASH); ?>" required>
+                                             <span class="description">
+                                                  <?php _e('Hash firmy można znaleść w Rekrutacja >  Integracja ze stroną www > sekcja API ', 'hrappka-offer-list') ?>
+                                             </span>
+                                        </div>
+                                   </div>
+
+                                   <div class="form-group row">
+                                        <label for="hrappka_host" class=" col-md-3 col-xs-12 relative">
+                                             <?php _e('Serwer', 'hrappka-offer-list') ?>
+                                             <small class="hrappka-example-text">
+                                                  <?php _e('np.','hrappka-offer-list') ?>&nbsp;http://app.hrappka.pl
+                                             </small>
+                                        </label>
+                                        <div class="col-md-7 col-xs-12">
+                                             <?php $host = get_option(static::HOST) ?>
+                                             <input name="hrappka_host" id="hrappka_host" type="text" class="form-control" value="<?php echo empty($host) ? static::DEFAULT_HOST : $host; ?>">
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="tab-pane" id="hrappka_offers_page_settings">
+                         <label class="control-label"><?php _e('Widoczne elementy na stronie', 'hrappka-offer-list') ?></label>
+
+                         <div class="checkbox">
+                              <label>
+                                   <input type="checkbox"
+                                          name="<?php echo static::VISIBLE_SETTINGS ?>[<?php echo static::VIEW_SETTINGS_IMG ?>]"
+                                          value="-1"
+                                        <?php echo isset($visibleSettings[static::VIEW_SETTINGS_IMG]) ? 'checked' : '' ?> >
+                                   <span class="m-l-10"><?php _e('Ukryj logo', 'hrappka-offer-list') ?></span>
+                              </label>
+                         </div>
+
+                         <div class="checkbox">
+                              <label>
+                                   <input type="checkbox"
+                                          name="<?php echo static::VISIBLE_SETTINGS ?>[<?php echo static::VIEW_SETTINGS_BRUTTO ?>]"
+                                          value="-1"
+                                        <?php echo isset($visibleSettings[static::VIEW_SETTINGS_BRUTTO]) ? 'checked' : '' ?> >
+                                   <span class="m-l-10"><?php _e('Ukryj wynagrodzenie brutto', 'hrappka-offer-list') ?></span>
+                              </label>
+                         </div>
+
+                         <div class="checkbox">
+                              <label>
+                                   <input type="checkbox"
+                                          name="<?php echo static::VISIBLE_SETTINGS ?>[<?php echo static::VIEW_SETTINGS_CONTRACT_TYPE ?>]"
+                                          value="-1"
+                                        <?php echo isset($visibleSettings[static::VIEW_SETTINGS_CONTRACT_TYPE]) ? 'checked' : '' ?> >
+                                   <span class="m-l-10"><?php _e('Ukryj typ umowy', 'hrappka-offer-list') ?></span>
+                              </label>
+                         </div>
+
+                         <div class="checkbox">
+                              <label>
+                                   <input type="checkbox"
+                                          name="<?php echo static::VISIBLE_SETTINGS ?>[<?php echo static::VIEW_SETTINGS_CLIENT ?>]"
+                                          value="-1"
+                                        <?php echo isset($visibleSettings[static::VIEW_SETTINGS_CLIENT]) ? 'checked' : '' ?> >
+                                   <span class="m-l-10"><?php _e('Ukryj  klienta', 'hrappka-offer-list') ?></span>
+                              </label>
+                         </div>
+
+                         <div class="checkbox">
+                              <label>
+                                   <input type="checkbox"
+                                          name="<?php echo static::VISIBLE_SETTINGS ?>[<?php echo static::VIEW_SETTINGS_PUBLICATION_DATE ?>]"
+                                          value="-1"
+                                        <?php echo isset($visibleSettings[static::VIEW_SETTINGS_PUBLICATION_DATE]) ? 'checked' : '' ?> >
+                                   <span class="m-l-10"><?php _e('Ukryj date publikacji', 'hrappka-offer-list') ?></span>
+                              </label>
+                         </div>
+
+                         <div class="checkbox">
+                              <label>
+                                   <input type="checkbox"
+                                          name="<?php echo static::VISIBLE_SETTINGS ?>[<?php echo static::VIEW_SETTINGS_DESCRIPTION ?>]"
+                                          value="-1"
+
+                                        <?php echo isset($visibleSettings[static::VIEW_SETTINGS_DESCRIPTION]) ? 'checked' : '' ?> >
+                                   <span class="m-l-10"> <?php _e('Ukryj opis stanowiska', 'hrappka-offer-list') ?></span>
+                              </label>
+                         </div>
+
+                         <div class="checkbox">
+                              <label>
+                                   <input type="checkbox"
+                                          name="<?php echo static::VISIBLE_SETTINGS ?>[<?php echo static::VIEW_SETTINGS_OFFER ?>]"
+                                          value="-1"
+
+                                        <?php echo isset($visibleSettings[static::VIEW_SETTINGS_OFFER]) ? 'checked' : '' ?> >
+                                   <span class="m-l-10"> <?php _e('Ukryj oferujemy', 'hrappka-offer-list') ?></span>
+                              </label>
+                         </div>
+
+                         <div class="checkbox">
+                              <label>
+                                   <input type="checkbox"
+                                          name="<?php echo static::VISIBLE_SETTINGS ?>[<?php echo static::VIEW_SETTINGS_REQUIREMENTS ?>]"
+                                          value="-1"
+                                        <?php echo isset($visibleSettings[static::VIEW_SETTINGS_REQUIREMENTS]) ? 'checked' : '' ?> >
+                                   <span class="m-l-10"><?php _e('Ukryj wymagania stanowiska', 'hrappka-offer-list') ?> </span>
+                              </label>
+                         </div>
+
+                         <div class="checkbox">
+                              <label>
+                                   <input type="checkbox"
+                                          name="<?php echo static::VISIBLE_SETTINGS ?>[<?php echo static::VIEW_SETTINGS_DATE_START_RECRUITMENT ?>]"
+                                          value="-1"
+                                        <?php echo isset($visibleSettings[static::VIEW_SETTINGS_DATE_START_RECRUITMENT]) ? 'checked' : '' ?> >
+                                   <span class="m-l-10"> <?php _e('Ukryj date publikacji', 'hrappka-offer-list') ?></span>
+                              </label>
+                         </div>
+
+                         <div class="checkbox">
+                              <label>
+                                   <input type="checkbox"
+                                          name="<?php echo static::VISIBLE_SETTINGS ?>[<?php echo static::VIEW_SETTINGS_DATE_END_RECRUITMENT ?>]"
+                                          value="-1"
+                                        <?php echo isset($visibleSettings[static::VIEW_SETTINGS_DATE_END_RECRUITMENT]) ? 'checked' : '' ?> >
+                                   <span class="m-l-10"> <?php _e('Ukryj date zakończenia rekrutacji', 'hrappka-offer-list') ?> </span>
+                              </label>
+                         </div>
+
+                         <div class="checkbox">
+                              <label>
+                                   <input type="checkbox"
+                                          name="<?php echo static::VISIBLE_SETTINGS ?>[<?php echo static::VIEW_SETTINGS_DATE_START_EMPLOY ?>]"
+                                          value="-1"
+                                        <?php echo isset($visibleSettings[static::VIEW_SETTINGS_DATE_START_EMPLOY]) ? 'checked' : '' ?> >
+                                   <span class="m-l-10"><?php _e('Ukryj termin zatrudnienia od', 'hrappka-offer-list') ?></span>
+                              </label>
+                         </div>
+
+                         <div class="checkbox">
+                              <label>
+                                   <input type="checkbox"
+                                          name="<?php echo static::VISIBLE_SETTINGS ?>[<?php echo static::VIEW_SETTINGS_DATE_END_EMPLOY ?>]"
+                                          value="-1"
+                                        <?php echo isset($visibleSettings[static::VIEW_SETTINGS_DATE_END_EMPLOY]) ? 'checked' : '' ?> >
+                                   <span class="m-l-10"><?php _e('Ukryj termin zatrudnienia do', 'hrappka-offer-list') ?></span>
+                              </label>
+                         </div>
+
+                         <div class="checkbox">
+                              <label>
+                                   <input type="checkbox"
+                                          name="<?php echo static::VISIBLE_SETTINGS ?>[<?php echo static::VIEW_SETTINGS_QUANTITY ?>]"
+                                          value="-1"
+                                        <?php echo isset($visibleSettings[static::VIEW_SETTINGS_QUANTITY]) ? 'checked' : '' ?> >
+                                   <span class="m-l-10"><?php _e('Ukryj ilość stanowisk', 'hrappka-offer-list') ?></span>
+                              </label>
+                         </div>
+
+                         <div class="checkbox">
+                              <label>
+                                   <input type="checkbox"
+                                          name="<?php echo static::VISIBLE_SETTINGS ?>[<?php echo static::VIEW_SETTINGS_WORK_HOURS ?>]"
+                                          value="-1"
+                                        <?php echo isset($visibleSettings[static::VIEW_SETTINGS_WORK_HOURS]) ? 'checked' : '' ?> >
+                                   <span class="m-l-10"><?php _e('Ukryj godziny pracy', 'hrappka-offer-list') ?></span>
+                              </label>
+                         </div>
+
+                         <div class="form-group row m-t-10">
+                              <label for="hrappka_custom_css" class="col-md-12 col-xs-12 control-label"><?php _e('Własny css', 'hrappka-offer-list') ?>:</label>
+                              <div class="col-md-12 col-xs-12">
+                                             <textarea name="<?php echo static::CUSTOM_CSS ?>" id="hrappka_custom_css" class="form-control hrappka-custom-css-offer-page">
+                                                  <?php echo get_option(static::CUSTOM_CSS); ?>
+                                             </textarea>
+                              </div>
+                         </div>
+
+                    </div>
+                    <div class="tab-pane " id="hrappka_offers_hash_list">
+                         <div class="" style="width:100%;overflow: auto;">
+                              <table class="table table-bordered table-responsive">
+                                   <thead>
+                                        <tr>
+                                             <th><?php _e('Nazwa') ?></th>
+                                             <th><?php _e('Hash') ?></th>
+                                             <th>Shortcode</th>
+                                        </tr>
+                                   </thead>
+                                   <tbody>
+                                        <?php foreach ($widgets as $widget): ?>
+                                             <tr>
+                                                  <td><?php echo $widget->crw_name ?></td>
+                                                  <td><?php echo $widget->crw_hash ?></td>
+                                                  <td>[hrappka_offers_list is_sc=1 hash=<?php echo $widget->crw_hash ?> ]</td>
+                                             </tr>
+                                        <?php endforeach; ?>
+                                   </tbody>
+                              </table>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="row">
+                    <div class="col-md-12 col-xs-12 text-right">
+                         <p class="submit">
+                              <input type="submit" name="submit" id="submit" class="button button-primary" value="<?php _e('Zapisz ustawienia', 'hrappka-offer-list') ?>">
+                         </p>
+                    </div>
+               </div>
+
+
+          </form>
+          <form action="<?php echo admin_url('admin-post.php'); ?>" method="post">
+               <input type="hidden" name="action" value="update_hrappka_offers_and_widget_settings">
+               <input type="submit"  class="button button-primary" value="<?php  _e('Zaktualizuj oferty i ustawienia widgetów')?>">
+          </form>
+     </div>
+</div>
